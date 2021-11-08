@@ -1,0 +1,17 @@
+@author: ervan
+"""
+
+def cek(num):
+    if num > 1:
+        for i in range(2, num):
+            if (num % i) == 0: 
+                print('karena',i,"x",num//i,"=",num)
+                break
+            else:
+                print("adalah prima")
+                
+    else:
+      print("bukan prima")
+                     
+while True:
+    cek(int(input("masukan angka yang di cek:")))
